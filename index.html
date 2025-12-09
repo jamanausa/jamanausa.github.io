@@ -167,23 +167,15 @@
 <!-- SECTION 5: CONTACT / FOOTER -->
 <footer class="footer text-center">
     <div class="container">
-        <p class="mb-1">© 2025 News Agency — All Rights Reserved <a href="https://jamanausa.github.io/sitemap.html">sitemap</a></p>
-        <p>
-            <a href="https://www.mapmyrun.com/routes/view/6660490010/">https://www.mapmyrun.com/routes/view/6660490010/</a>
-<a href="https://www.mapmyrun.com/routes/view/6660490602/">https://www.mapmyrun.com/routes/view/6660490602/</a>
-<a href="https://www.mapmyrun.com/routes/view/6660490912/">https://www.mapmyrun.com/routes/view/6660490912/</a>
-<a href="https://www.mapmyrun.com/routes/view/6660491124/">https://www.mapmyrun.com/routes/view/6660491124/</a>
-<a href="https://www.mapmyrun.com/routes/view/6660491390/">https://www.mapmyrun.com/routes/view/6660491390/</a>
-<a href="https://www.mapmyrun.com/routes/view/6660491595/">https://www.mapmyrun.com/routes/view/6660491595/</a>
-<a href="https://www.mapmyrun.com/routes/view/6660493753/">https://www.mapmyrun.com/routes/view/6660493753/</a>
-<a href="https://www.mapmyrun.com/routes/view/6660495087/">https://www.mapmyrun.com/routes/view/6660495087/</a>
-<a href="https://www.mapmyrun.com/routes/view/6660504109/">https://www.mapmyrun.com/routes/view/6660504109/</a>
-<a href="https://www.mapmyrun.com/routes/view/6660504465/">https://www.mapmyrun.com/routes/view/6660504465/</a>
-<a href="https://www.mapmyrun.com/routes/view/6660504843/">https://www.mapmyrun.com/routes/view/6660504843/</a>
-<a href="https://www.mapmyrun.com/routes/view/6660505377/">https://www.mapmyrun.com/routes/view/6660505377/</a>
-<a href="https://www.mapmyrun.com/routes/view/6660505954/">https://www.mapmyrun.com/routes/view/6660505954/</a>
+       <div id="footer"></div>
+<script>
+  fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
 
-</p>
     </div>
 </footer>
 
