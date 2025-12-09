@@ -39,7 +39,7 @@
 
 </head>
 <body>
-<a href="https://jamanausa.github.io"HOME</a>
+<a href="https://jamanausa.github.io">HOME</a>
 <div class="container">
     <h1>📄 Sitemap – USA</h1> 
     <p>Below is a list of all publicly accessible pages on this site.</p>
@@ -64,6 +64,14 @@
     </ul>
 
 </div>
+<div id="footer"></div>
+<script>
+  fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
 
 </body>
 </html>
