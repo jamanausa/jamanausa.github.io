@@ -160,20 +160,59 @@
 
 <!-- Sticky Offer -->
 <div id="stickyOffer" class="sticky-offer">
-    📞 Need Quick Air Duct Cleaning in Los Angeles? <a href="tel:+18882397000"> Call Now </a>
+    💨 Need Quick Air Duct Cleaning in Los Angeles? 
+    <a href="tel:+18882397000" class="call-btn">📞 Call Now</a>
 </div>
 
+<style>
+/* Sticky bar container */
+.sticky-offer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff6600; /* Bright orange to attract attention */
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 9999;
+    font-size: 18px;
+}
+
+/* Call Now button inside sticky bar */
+.sticky-offer .call-btn {
+    background-color: #28a745; /* Bright green for urgency */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect */
+.sticky-offer .call-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+</style>
+
 <script>
-    // Sticky notification on scroll
+    // Show sticky bar after scrolling 300px
     window.addEventListener("scroll", () => {
         const alertBox = document.getElementById("stickyOffer");
         if (window.scrollY > 300) {
-            alertBox.style.display = "block";
+            alertBox.style.display = "flex"; // Use flex to keep button aligned
+            alertBox.style.alignItems = "center";
         } else {
             alertBox.style.display = "none";
         }
     });
 </script>
+
 
 <!-- FIXED VIDEO SCHEMA (Option A) -->
 <script type="application/ld+json">
