@@ -227,7 +227,21 @@
   "embedUrl": "https://youtu.be/3OrtK-Vwd6o"
 }
 </script>
-    <!-- FOOTER --> <footer class="text-center"> <div class="container"> <p>© 2025 Los Angeles Air Duct Cleaning Services. All rights reserved.</p> </div> </footer>
+<!-- SECTION 5: CONTACT / FOOTER -->
+<footer class="footer text-center">
+    <div class="container">
+       <div id="footer"><p>© 2025 Los Angeles Air Duct Cleaning Services. All rights reserved.</p></div>
+<script>
+  fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+    </div>
+</footer>
+        
 
 </body>
 </html>
