@@ -250,12 +250,20 @@ window.addEventListener("scroll", function() {
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="text-center">
+  <!-- SECTION 5: CONTACT / FOOTER -->
+<footer class="footer text-center">
     <div class="container">
-      <p>© 2025 Miami Air Duct Cleaning Services. All rights reserved.</p>
+       <div id="footer"><p>© 2025 Los Angeles Air Duct Cleaning Services. All rights reserved.</p></div>
+<script>
+  fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
     </div>
-  </footer>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
